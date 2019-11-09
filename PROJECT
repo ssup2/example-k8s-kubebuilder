@@ -1,0 +1,7 @@
+version: "2"
+domain: cache.example.com
+repo: github.com/ssup2/example-k8s-kubebuilder
+resources:
+- group: memcached
+  version: v1
+  kind: Memcached
