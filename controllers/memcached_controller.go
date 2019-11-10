@@ -120,9 +120,10 @@ func (r *MemcachedReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	// List the pods for this memcached's deployment
 	podList := &corev1.PodList{}
 	ls := labelsForMemcached(memcached.Name)
+
 	listOps := []client.ListOption{
 		client.InNamespace(req.NamespacedName.Namespace),
-		client.MatchingFields(ls),
+		client.MatchingLabels(ls),
 	}
 	err = r.Client.List(context.TODO(), podList, listOps...)
 	if err != nil {
