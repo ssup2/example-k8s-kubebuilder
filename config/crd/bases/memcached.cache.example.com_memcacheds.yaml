@@ -15,6 +15,8 @@ spec:
     plural: memcacheds
     singular: memcached
   scope: ""
+  subresources:
+    status: {}
   validation:
     openAPIV3Schema:
       description: Memcached is the Schema for the memcacheds API
