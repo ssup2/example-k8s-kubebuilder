@@ -165,17 +165,18 @@ func (r *MemcachedReconciler) deploymentForMemcached(m *memcachedv1.Memcached) *
 					Labels: ls,
 				},
 				Spec: corev1.PodSpec{
-					Containers: []corev1.Container{{
-						Image:   "memcached:1.4.36-alpine",
-						Name:    "memcached",
-						Command: []string{"memcached", "-m=64", "-o", "modern", "-v"},
-						Ports: []corev1.ContainerPort{
-							{
-								ContainerPort: 11211,
-								Name:          "memcached",
+					Containers: []corev1.Container{
+						{
+							Image:   "memcached:1.4.36-alpine",
+							Name:    "memcached",
+							Command: []string{"memcached", "-m=64", "-o", "modern", "-v"},
+							Ports: []corev1.ContainerPort{
+								{
+									ContainerPort: 11211,
+									Name:          "memcached",
+								},
 							},
 						},
-					},
 					},
 				},
 			},
