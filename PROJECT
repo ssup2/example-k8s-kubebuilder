@@ -1,7 +1,16 @@
-version: "2"
 domain: cache.example.com
+layout:
+- go.kubebuilder.io/v3
+projectName: example-k8s-kubebuilder
 repo: github.com/ssup2/example-k8s-kubebuilder
 resources:
-- group: memcached
-  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: cache.example.com
+  group: memcached
   kind: Memcached
+  path: github.com/ssup2/example-k8s-kubebuilder/api/v1
+  version: v1
+version: "3"
