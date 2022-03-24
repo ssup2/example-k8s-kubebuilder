@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/b2ed954/
+.SHELLFLAGS	Makefile	/^.SHELLFLAGS = -ec$/;"	m
+AddToScheme	api/v1/groupversion_info.go	/^	AddToScheme = SchemeBuilder.AddToScheme$/;"	v	package:v1
+CONTROLLER_GEN	Makefile	/^CONTROLLER_GEN = $(shell pwd)\/bin\/controller-gen$/;"	m
+Client	controllers/memcached_controller.go	/^	client.Client$/;"	M	struct:controllers.MemcachedReconciler	typeref:typename:client.Client
+DeepCopy	api/v1/zz_generated.deepcopy.go	/^func (in *Memcached) DeepCopy() *Memcached {$/;"	f	unknown:v1.Memcached	typeref:typename:*Memcached
+DeepCopy	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedList) DeepCopy() *MemcachedList {$/;"	f	unknown:v1.MemcachedList	typeref:typename:*MemcachedList
+DeepCopy	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedSpec) DeepCopy() *MemcachedSpec {$/;"	f	unknown:v1.MemcachedSpec	typeref:typename:*MemcachedSpec
+DeepCopy	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedStatus) DeepCopy() *MemcachedStatus {$/;"	f	unknown:v1.MemcachedStatus	typeref:typename:*MemcachedStatus
+DeepCopyInto	api/v1/zz_generated.deepcopy.go	/^func (in *Memcached) DeepCopyInto(out *Memcached) {$/;"	f	unknown:v1.Memcached
+DeepCopyInto	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedList) DeepCopyInto(out *MemcachedList) {$/;"	f	unknown:v1.MemcachedList
+DeepCopyInto	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedSpec) DeepCopyInto(out *MemcachedSpec) {$/;"	f	unknown:v1.MemcachedSpec
+DeepCopyInto	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedStatus) DeepCopyInto(out *MemcachedStatus) {$/;"	f	unknown:v1.MemcachedStatus
+DeepCopyObject	api/v1/zz_generated.deepcopy.go	/^func (in *Memcached) DeepCopyObject() runtime.Object {$/;"	f	unknown:v1.Memcached	typeref:typename:runtime.Object
+DeepCopyObject	api/v1/zz_generated.deepcopy.go	/^func (in *MemcachedList) DeepCopyObject() runtime.Object {$/;"	f	unknown:v1.MemcachedList	typeref:typename:runtime.Object
+ENVTEST	Makefile	/^ENVTEST = $(shell pwd)\/bin\/setup-envtest$/;"	m
+ENVTEST_K8S_VERSION	Makefile	/^ENVTEST_K8S_VERSION = 1.23$/;"	m
+GOBIN	Makefile	/^GOBIN=$(shell go env GOBIN)$/;"	m
+GOBIN	Makefile	/^GOBIN=$(shell go env GOPATH)\/bin$/;"	m
+GroupVersion	api/v1/groupversion_info.go	/^	GroupVersion = schema.GroupVersion{Group: "memcached.cache.example.com", Version: "v1"}$/;"	v	package:v1
+IMG	Makefile	/^IMG ?= ssup2\/memcached_controller:latest$/;"	m
+Items	api/v1/memcached_types.go	/^	Items           []Memcached `json:"items"`$/;"	m	struct:v1.MemcachedList	typeref:typename:[]Memcached
+KUSTOMIZE	Makefile	/^KUSTOMIZE = $(shell pwd)\/bin\/kustomize$/;"	m
+ListMeta	api/v1/memcached_types.go	/^	metav1.ListMeta `json:"metadata,omitempty"`$/;"	M	struct:v1.MemcachedList	typeref:typename:metav1.ListMeta
+Memcached	api/v1/memcached_types.go	/^type Memcached struct {$/;"	s	package:v1
+MemcachedList	api/v1/memcached_types.go	/^type MemcachedList struct {$/;"	s	package:v1
+MemcachedReconciler	controllers/memcached_controller.go	/^type MemcachedReconciler struct {$/;"	s	package:controllers
+MemcachedSpec	api/v1/memcached_types.go	/^type MemcachedSpec struct {$/;"	s	package:v1
+MemcachedStatus	api/v1/memcached_types.go	/^type MemcachedStatus struct {$/;"	s	package:v1
+Nodes	api/v1/memcached_types.go	/^	Nodes []string `json:"nodes"`$/;"	m	struct:v1.MemcachedStatus	typeref:typename:[]string
+ObjectMeta	api/v1/memcached_types.go	/^	metav1.ObjectMeta `json:"metadata,omitempty"`$/;"	M	struct:v1.Memcached	typeref:typename:metav1.ObjectMeta
+PROJECT_DIR	Makefile	/^PROJECT_DIR := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))$/;"	m
+Reconcile	controllers/memcached_controller.go	/^func (r *MemcachedReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, err/;"	f	struct:controllers.MemcachedReconciler	typeref:typename:(ctrl.Result, error)
+SHELL	Makefile	/^SHELL = \/usr\/bin\/env bash -o pipefail$/;"	m
+Scheme	controllers/memcached_controller.go	/^	Scheme *runtime.Scheme$/;"	m	struct:controllers.MemcachedReconciler	typeref:typename:*runtime.Scheme
+SchemeBuilder	api/v1/groupversion_info.go	/^	SchemeBuilder = &scheme.Builder{GroupVersion: GroupVersion}$/;"	v	package:v1
+SetupWithManager	controllers/memcached_controller.go	/^func (r *MemcachedReconciler) SetupWithManager(mgr ctrl.Manager) error {$/;"	f	struct:controllers.MemcachedReconciler	typeref:typename:error
+Size	api/v1/memcached_types.go	/^	Size int32 `json:"size"`$/;"	m	struct:v1.MemcachedSpec	typeref:typename:int32
+Spec	api/v1/memcached_types.go	/^	Spec   MemcachedSpec   `json:"spec,omitempty"`$/;"	m	struct:v1.Memcached	typeref:typename:MemcachedSpec
+Status	api/v1/memcached_types.go	/^	Status MemcachedStatus `json:"status,omitempty"`$/;"	m	struct:v1.Memcached	typeref:typename:MemcachedStatus
+TestAPIs	controllers/suite_test.go	/^func TestAPIs(t *testing.T) {$/;"	f	package:controllers
+TypeMeta	api/v1/memcached_types.go	/^	metav1.TypeMeta   `json:",inline"`$/;"	M	struct:v1.Memcached	typeref:typename:metav1.TypeMeta
+TypeMeta	api/v1/memcached_types.go	/^	metav1.TypeMeta `json:",inline"`$/;"	M	struct:v1.MemcachedList	typeref:typename:metav1.TypeMeta
+all	Makefile	/^all: build$/;"	t
+appsv1	controllers/memcached_controller.go	/^	appsv1 "k8s.io\/api\/apps\/v1"$/;"	P	package:k8s.io/api/apps/v1
+build	Makefile	/^build: generate fmt vet ## Build manager binary.$/;"	t
+cfg	controllers/suite_test.go	/^var cfg *rest.Config$/;"	v	package:controllers	typeref:typename:*rest.Config
+clientgoscheme	main.go	/^	clientgoscheme "k8s.io\/client-go\/kubernetes\/scheme"$/;"	P	package:k8s.io/client-go/kubernetes/scheme
+controller-gen	Makefile	/^controller-gen: ## Download controller-gen locally if necessary.$/;"	t
+controllers	controllers/memcached_controller.go	/^package controllers$/;"	p
+controllers	controllers/suite_test.go	/^package controllers$/;"	p
+corev1	controllers/memcached_controller.go	/^	corev1 "k8s.io\/api\/core\/v1"$/;"	P	package:k8s.io/api/core/v1
+ctrl	controllers/memcached_controller.go	/^	ctrl "sigs.k8s.io\/controller-runtime"$/;"	P	package:sigs.k8s.io/controller-runtime
+ctrl	main.go	/^	ctrl "sigs.k8s.io\/controller-runtime"$/;"	P	package:sigs.k8s.io/controller-runtime
+deploy	Makefile	/^deploy: manifests kustomize ## Deploy controller to the K8s cluster specified in ~\/.kube\/confi/;"	t
+deploymentForMemcached	controllers/memcached_controller.go	/^func (r *MemcachedReconciler) deploymentForMemcached(m *memcachedv1.Memcached) *appsv1.Deploymen/;"	f	struct:controllers.MemcachedReconciler	typeref:typename:*appsv1.Deployment
+docker-build	Makefile	/^docker-build: test ## Build docker image with the manager.$/;"	t
+docker-push	Makefile	/^docker-push: ## Push docker image with the manager.$/;"	t
+envtest	Makefile	/^envtest: ## Download envtest-setup locally if necessary.$/;"	t
+fmt	Makefile	/^fmt: ## Run go fmt against code.$/;"	t
+generate	Makefile	/^generate: controller-gen ## Generate code containing DeepCopy, DeepCopyInto, and DeepCopyObject /;"	t
+getPodNames	controllers/memcached_controller.go	/^func getPodNames(pods []corev1.Pod) []string {$/;"	f	package:controllers	typeref:typename:[]string
+go-get-tool	Makefile	/^define go-get-tool$/;"	m
+help	Makefile	/^help: ## Display this help.$/;"	t
+ignore-not-found	Makefile	/^  ignore-not-found = false$/;"	m
+init	api/v1/memcached_types.go	/^func init() {$/;"	f	package:v1
+init	main.go	/^func init() {$/;"	f	package:main
+install	Makefile	/^install: manifests kustomize ## Install CRDs into the K8s cluster specified in ~\/.kube\/config.$/;"	t
+k8sClient	controllers/suite_test.go	/^var k8sClient client.Client$/;"	v	package:controllers	typeref:typename:client.Client
+kustomize	Makefile	/^kustomize: ## Download kustomize locally if necessary.$/;"	t
+labelsForMemcached	controllers/memcached_controller.go	/^func labelsForMemcached(name string) map[string]string {$/;"	f	package:controllers	typeref:typename:map[string]string
+logf	controllers/suite_test.go	/^	logf "sigs.k8s.io\/controller-runtime\/pkg\/log"$/;"	P	package:sigs.k8s.io/controller-runtime/pkg/log
+main	main.go	/^func main() {$/;"	f	package:main
+main	main.go	/^package main$/;"	p
+manifests	Makefile	/^manifests: controller-gen ## Generate WebhookConfiguration, ClusterRole and CustomResourceDefini/;"	t
+memcachedv1	controllers/memcached_controller.go	/^	memcachedv1 "github.com\/ssup2\/example-k8s-kubebuilder\/api\/v1"$/;"	P	package:github.com/ssup2/example-k8s-kubebuilder/api/v1
+memcachedv1	controllers/suite_test.go	/^	memcachedv1 "github.com\/ssup2\/example-k8s-kubebuilder\/api\/v1"$/;"	P	package:github.com/ssup2/example-k8s-kubebuilder/api/v1
+memcachedv1	main.go	/^	memcachedv1 "github.com\/ssup2\/example-k8s-kubebuilder\/api\/v1"$/;"	P	package:github.com/ssup2/example-k8s-kubebuilder/api/v1
+metav1	api/v1/memcached_types.go	/^	metav1 "k8s.io\/apimachinery\/pkg\/apis\/meta\/v1"$/;"	P	package:k8s.io/apimachinery/pkg/apis/meta/v1
+run	Makefile	/^run: manifests generate fmt vet ## Run a controller from your host.$/;"	t
+runtime	api/v1/zz_generated.deepcopy.go	/^	runtime "k8s.io\/apimachinery\/pkg\/runtime"$/;"	P	package:k8s.io/apimachinery/pkg/runtime
+scheme	main.go	/^	scheme   = runtime.NewScheme()$/;"	v	package:main
+setupLog	main.go	/^	setupLog = ctrl.Log.WithName("setup")$/;"	v	package:main
+test	Makefile	/^test: manifests generate fmt vet envtest ## Run tests.$/;"	t
+testEnv	controllers/suite_test.go	/^var testEnv *envtest.Environment$/;"	v	package:controllers	typeref:typename:*envtest.Environment
+undeploy	Makefile	/^undeploy: ## Undeploy controller from the K8s cluster specified in ~\/.kube\/config. Call with i/;"	t
+uninstall	Makefile	/^uninstall: manifests kustomize ## Uninstall CRDs from the K8s cluster specified in ~\/.kube\/con/;"	t
+utilruntime	main.go	/^	utilruntime "k8s.io\/apimachinery\/pkg\/util\/runtime"$/;"	P	package:k8s.io/apimachinery/pkg/util/runtime
+v1	api/v1/groupversion_info.go	/^package v1$/;"	p
+v1	api/v1/memcached_types.go	/^package v1$/;"	p
+v1	api/v1/zz_generated.deepcopy.go	/^package v1$/;"	p
+v1	controllers/memcached_controller.go	/^	v1 "k8s.io\/apimachinery\/pkg\/apis\/meta\/v1"$/;"	P	package:k8s.io/apimachinery/pkg/apis/meta/v1
+vet	Makefile	/^vet: ## Run go vet against code.$/;"	t

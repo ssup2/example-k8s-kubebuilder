@@ -124,7 +124,6 @@ func (r *MemcachedReconciler) Reconcile(ctx context.Context, req ctrl.Request) (
 		return ctrl.Result{}, err
 	}
 	podNames := getPodNames(podList.Items)
-	reqLogger.Info("test", "podNames", podNames)
 
 	// Update status.Nodes if needed
 	if !reflect.DeepEqual(podNames, memcached.Status.Nodes) {
